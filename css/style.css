@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #0e1348;
+    --color-secundario: rgb(167, 34, 34);
+    --color-terciario: rgb(255, 255, 255);
+    --color-text: rgb(231, 226, 218);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Oranienbaum', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-principal);
+
+    header {
+        border-bottom: 1px solid var(--color-terciario);
+
+        .cabecera {
+            display: flex;
+            margin: 0 2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--color-text);
+            text-shadow: 4px 4px 4px var(--color-secundario);
+        }
+    }
+
+    nav {
+        margin: 2rem auto;
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+
+            li {
+                padding: 0.2rem 1rem;
+                border: 1px solid;
+                border-radius: 1rem;
+                background-color: #fffbfe;
+                color: #ffd300;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            li:hover {
+                background-color: var(--color-principal);
+            }
+
+        }
+    }
+
+    main {
+        background-image: url(../assets/img/OIP.webp);
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        height: 4rem;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--color-text);
+            text-shadow: 4px 4px 4px var(--color-secundario);
+        }
+
+    }
+
+    .container-juego {
+        margin: 0;
+        text-align: center;
+
+        h3 {
+            color: var(--color-text);
+            text-transform: uppercase;
+            font-weight: 600;
+            text-shadow: 4px 4px 4px var(--color-secundario);
+            padding: 1rem;
+            ;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 2rem;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+
+        }
+    }
+
+    footer {
+        margin: 1rem auto;
+        color: var(--color-text);
+    }
+
+}
