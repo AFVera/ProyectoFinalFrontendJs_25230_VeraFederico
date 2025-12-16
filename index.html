@@ -13,7 +13,9 @@
 
     <header>
         <div class="cabecera">
-            <img src="./assets/img/ps1.png" width="200px" alt="Logo de mi tienda">
+            <a href="./index.html">
+                <img src="./assets/img/ps1.png" width="200px" alt="Logo de mi tienda">
+            </a>
             <h1>PlayZone</h1>
         </div>
     </header>
@@ -22,7 +24,15 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#producto">Productos</a></li>
             <li><a href="#contacto">Contactos</a></li>
-            <li><a href="#carrito">Carrito</a></li>
+            <li>
+                <a onclick="handleCart()" href="./pages/carrito.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+                    </svg>
+                    <div class="count"></div>
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -30,20 +40,20 @@
     </main>
     <section id="producto" class="container-juego">
         <h3>Productos</h3>
-        <div class="product">
+        <div class="productos-principales">
             <div class="card">
                 <a href="./pages/consolas.html">
-                        <img src="./assets/img/consolas.png" width="600px" alt="Consolas">
+                    <img src="./assets/img/consolas.png" width="600px" alt="Consolas">
                 </a>
             </div>
             <div class="card">
-              <a href="./pages/perifericos.html">
-                        <img src="./assets/img/perifericos.png" width="600px" alt="Perifericos">
+                <a href="./pages/perifericos.html">
+                    <img src="./assets/img/perifericos.png" width="600px" alt="Perifericos">
                 </a>
             </div>
             <div class="card">
-              <a href="./pages/juegos.html">
-                        <img src="./assets/img/juegos.png" width="600px" alt="Juegos">
+                <a href="./pages/juegos.html">
+                    <img src="./assets/img/juegos.png" width="600px" alt="Juegos">
                 </a>
             </div>
         </div>
@@ -87,8 +97,8 @@
             </script>
             <link href="https://cdn.jotfor.ms/s/static/31f8a4169d1/static/formCss.css" rel="stylesheet"
                 type="text/css" />
-            <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=e3024b9
-" />
+            <link type="text/css" rel="stylesheet"
+                href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=e3024b9" />
             <style type="text/css">
                 @media print {
 
@@ -1539,7 +1549,8 @@ www.jotform.com
                                     class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
                                     <button id="input_8" type="submit"
                                         class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit"
-                                        data-component="button" data-content="">Enviar</button></div>
+                                        data-component="button" data-content="">Enviar</button>
+                                </div>
                             </div>
                         </li>
                         <li style="display:none">Should be Empty: <input type="text" name="website" value=""
@@ -1567,7 +1578,6 @@ www.jotform.com
         <br>
         <h3>Proyecto Pre-Entrega - Talento Tech</h3>
     </footer>
-
 </body>
 
 </html>

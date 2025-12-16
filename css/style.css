@@ -67,6 +67,20 @@ body {
                 background-color: var(--color-principal);
             }
 
+            li:last-child {
+                position: relative;
+
+                .count {
+                    position: absolute;
+                    bottom: 0;
+                    left: 5px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    padding: 2px 5px;
+                    font-size: 10px;
+                }
+            }
+
         }
     }
 
@@ -98,25 +112,77 @@ body {
             font-weight: 600;
             text-shadow: 4px 4px 4px var(--color-secundario);
             padding: 1rem;
-            ;
         }
 
-        .product {
+        h4 {
+            color: var(--color-text);
+            text-transform: uppercase;
+            font-weight: 600;
+            text-shadow: 4px 4px 4px var(--color-secundario);
+            padding: 1rem;
+        }
+
+        .productos-principales {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             padding: 0 2rem;
             justify-content: center;
         }
 
+        .product {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 0 2rem;
+            justify-content: center;
+        }
+
         .card {
             border: 1px solid #ccc;
+            border-radius: 1rem;
 
+            p {
+                color: var(--color-text);
+            }
         }
     }
 
-    footer {
-        margin: 1rem auto;
-        color: var(--color-text);
-    }
-
 }
+
+.name-class-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+.name-class-tabla thead {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.name-class-tabla th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+.name-class-tabla td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.name-class-tabla tbody tr:nth-child(odd) {
+    background-color: #1c1f5a;
+}
+
+.name-class-tabla tbody tr:nth-child(even) {
+    background-color: #2a2f70;
+}
+
+footer {
+    margin: 1rem auto;
+    color: var(--color-text);
+}
+
